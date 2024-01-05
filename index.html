@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Lista de Contatos</title>
+</head>
+<body>
+    <h1><img src="./images/Address Book.png" alt="Agenda">Lista de Contatos</h1>
+
+<form id="formContato">
+    <label for="inputNome">Nome:</label>
+    <input type="text" required minlength="2" maxlength="50" placeholder="Digite um Nome" pattern="[a-zA-ZÀ-ú\s]+" title="Digite um nome válido" id="inputNome" name="nome">
+    <label for="inputTelefone">Telefone:</label>
+    <input type="tel" required minlength="10" placeholder="Digite o Número" pattern="[0-9]{10,}" title="Digite um número de telefone válido" id="inputTelefone" name="telefone">
+    <button type="button" onclick="validarEAdicionarContato()">Adicionar</button>
+    <br>
+    <span id="nomeError" class="error-message"></span>
+    <span id="telefoneError" class="error-message"></span>
+</form>
+
+<table id="tabelaContatos">
+    <thead>
+        <tr>
+            <th><img src="./images/Address Card.png" alt="Endereço do Cartão"> Nome</th>
+            <th><img src="./images/Phone.png" alt="Telefone"> Telefone</th>
+            <th><img src="./images/Gear.png" alt="Ações"> Ações</th>
+        </tr>
+    </thead>
+    <tbody id="corpoTabela"></tbody>
+</table>
+
+<footer>© Todos os direitos reservados</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

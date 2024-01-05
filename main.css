@@ -1,0 +1,102 @@
+body {
+    justify-content: center;
+    width: 1280px;
+    max-width: 100%;
+    margin-left: 380px;
+    background-color: #011f4b;
+    color: #b3cde0;
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    background-color: #005b96;
+    padding: 12px;
+    width: 600px;
+    margin-left: 330px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+form input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 6px;
+    text-align: center;
+}
+
+button {
+    background-color: #ECAA00;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #f3c348;
+}
+
+h1 {
+    text-align: center;
+    background-color: #005b96;
+    margin-left: 320px;
+    margin-right: 320px;
+    padding: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h1 img {
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 140px;
+    width: 80%;
+}
+
+th, td {
+    border: 2px solid #b3cde0;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+}
+
+
+thead th img {
+    width: 25px;
+    height: 25px;
+}
+
+th {
+background-color: #005b96;
+}
+
+tbody {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #005b96;
+}
+
+footer {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
